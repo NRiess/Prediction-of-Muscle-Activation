@@ -1,9 +1,8 @@
 # LSTM for muscle activation prediction
-Work at Institute for Parallel and Distributed Systems (IPVS) at the University of Stuttgart
-The goal is to predict the activation of the 5 arm muscles given the angle, angular velocity, angular accelaration of the arm and the weight which will be holded.
+Work at Institute for Parallel and Distributed Systems (IPVS) at the University of Stuttgart.
 
 # Motivation
-The LSTM will be implemented in a Hololens application to visualize the muscle activation of an opposed person. It can than be used, for example, for the education of psychotherapists.
+The goal is to predict the activation of the 5 arm muscles given the normalized angle, angular velocity, angular accelaration of the arm and the weight which will be holded. Furthermore, this programm facilitates the evaluation. The error measures will be evaluated to decide how the project will be continued. If certain intervals constantly have a high error measure, it will make sense to train another neural network for this interval.
 
 # Structure
 The main file is "networktest.py". "functions.py" contains several functions which are imported in "networktest.py". The file "test repeated_use_of_sorted_function.py" demonstrates how the sorting function used in "networktest.py" works in a simple example.
@@ -24,4 +23,7 @@ One can also manually choose the number of neurons by using an array. Multiple n
 Then, a dense neural network or/and an LSTM network can be trained.
 
 3. Evaluation and evaluation of the result
-The model will be evalated with eval_models which is located in "functions.py". The command model.evaluate() returns an array having the structure ['loss', 'mean_squared_error', 'mean_absolute_error']. So can focus on analyzing differen error measures. The error measure will be saved with addtionaly information concerning the computation time and without in a *.txt file. Furthermore, the network architectures will be saved as *.png files.
+The model will be evalated with eval_models which is located in "functions.py". The command model.evaluate() returns an array having the structure ['loss', 'mean_squared_error', 'mean_absolute_error']. So can focus on analyzing differen error measures. The error measure will be saved with addtionaly information concerning the computation time and without in a *.txt file. Furthermore, the network architectures will be saved as *.png files. Subsequently, the mean absolute errors (mae) of the sorted validation data will be plotted for different angle intervals. Additionally, the mae is plotted for each muscle and angle range individually.
+
+# Outlook
+In a long ran, the neural network will be implemented in a Hololens application to visualize the muscle activation of an opposed person. It can than be used, for example, for the education of psychotherapists.
