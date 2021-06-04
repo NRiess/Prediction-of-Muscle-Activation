@@ -24,7 +24,7 @@ One also has the option to extract samples every n timesteps for the training an
 One can also manually choose the number of neurons by using an array. Multiple neural networks can be tested in one run by extending the array into the 2nd dimension.
 Then, a dense neural network or/and an LSTM network can be trained.
 
-3. Evaluation and evaluation of the result
+3. Evaluation of the neural networks and of the result
 
 The model will be evaluated with eval_models which is located in "functions.py". The command model.evaluate() returns an array having the structure ['loss', 'mean_squared_error', 'mean_absolute_error']. So can focus on analyzing different error measures. The error measure will be saved with additional information concerning the computation time and without in a *.txt file. Furthermore, the network architectures will be saved as *.png files. Subsequently, the mean absolute errors (mae) of the sorted validation data will be plotted for different angle intervals. Additionally, the mae is plotted for each muscle and angle range individually.
 
