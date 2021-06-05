@@ -9,7 +9,7 @@ The main file is "networktest.py". "functions.py" contains several functions whi
 "networktest.py" basically consists of the following parts:
 1. Preprocessing and loading of the future input data of the neural network
 2. Building and training of the LSTM or dense neural network
-3. Evaluation and evaluation of the result
+3. Visualization and evaluation of the result
 
 # Explanations
 1. Preprocessing and loading of the future input data of the neural network
