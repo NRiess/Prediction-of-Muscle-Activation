@@ -2,7 +2,7 @@
 Work at Institute for Parallel and Distributed Systems (IPVS) at the University of Stuttgart.
 
 # Motivation
-The goal is to predict the activation of the 5 arm muscles of an opposed person given the normalized angle, angular velocity, angular acceleration of the arm, and the weight which will be held. Furthermore, this program facilitates the evaluation. The error measures will be evaluated to decide how the project will be continued. If certain intervals constantly have a high error measure, it will make sense to train another neural network for this interval.
+The goal is to predict the activation of the 5 arm muscles of an opposed person given the normalized angle, angular velocity, angular acceleration of the arm, and the weight which will be held. Furthermore, this program facilitates the evaluation. The error measures will be evaluated to decide how the project will be continued. If certain intervals constantly have a high error measure, the original idea was to train another neural network for this interval.
 
 # Structure
 The main file is "networktest.py". "functions.py" contains several functions which are imported in "networktest.py". The file "test repeated_use_of_sorted_function.py" demonstrates how the sorting function used in "networktest.py" works in a simple example.
