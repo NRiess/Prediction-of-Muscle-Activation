@@ -31,4 +31,4 @@ The model will be evaluated with eval_models which is located in "functions.py".
 ![image](https://github.com/NRiess/Prediction-of-Muscle-Activation/blob/main/Structure.png)
 
 # Outlook
-In the long ran, the neural network will be implemented in a Hololens application to visualize the muscle activation of an opposed person. It can then be used, for example, for the education of psychotherapists. Furthermore, the neural network will also be implemented on the iPhone 12 pro since it has a lidar sensor and has therefore a good depth perception. The implementation on the iPhone would make the program available to more people since it is much cheaper than the Hololens 2.
+In the long run, the neural network will be implemented in a Hololens application to visualize the muscle activation of an opposed person. It can then be used, for example, for the education of psychotherapists. Furthermore, the neural network will also be implemented on the iPhone 12 pro since it has a lidar sensor and has therefore a good depth perception. The implementation on the iPhone would make the program available to more people since it is much cheaper than the Hololens 2.
